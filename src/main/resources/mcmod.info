@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tinkershield",
+  "name": "Tinker Shield",
+  "description": "Adds a shield to Tinker's Construct",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Multitera"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
