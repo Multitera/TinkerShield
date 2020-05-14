@@ -1,5 +1,6 @@
 package com.multitera.tinkershield.item;
 
+import com.multitera.tinkershield.TinkerShield;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -50,7 +51,7 @@ public class BattleShield extends SwordCore {
 
         addCategory(Category.WEAPON);
 
-        setUnlocalizedName("battleshield").setRegistryName("battleshield");
+        setUnlocalizedName(TinkerShield.MODID + ".battleshield").setRegistryName(TinkerShield.MODID, "battleshield");
 
         this.addPropertyOverride(new ResourceLocation("blocking"), new IItemPropertyGetter() {
             @Override
