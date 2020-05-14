@@ -1,0 +1,23 @@
+{
+  "tool": "battleshield",
+  "text": [
+    {
+      "text": "The Battlesshield is an advanced version of the Battlesign for all your offensive defensive needs."
+    },
+    {
+      "text": "\n"
+    },
+    {
+      "text": "In addition to the properties of a Battlesign, blocking while sprinting will charge, blocking while falling will Goomba stomp foes, and ending a block while sneaking will perform a shield bash."
+    }
+  ],
+  "properties": [
+    "Defensive weapon",
+    "Low damage",
+    "Can be used as a shield",
+    "Blocking reflects projectiles",
+    "Shield Bash",
+    "Shield Charge",
+    "Goomba Stomp"
+  ]
+}

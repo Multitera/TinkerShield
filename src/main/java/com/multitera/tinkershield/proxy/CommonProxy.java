@@ -30,4 +30,7 @@ public class CommonProxy {
     public void registerToolModel(ToolCore toolCore) {
 
     }
+    public void preRender() {
+
+    }
 }

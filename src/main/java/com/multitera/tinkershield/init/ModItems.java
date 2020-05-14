@@ -23,6 +23,7 @@ public class ModItems {
     }
 
     public static void init(FMLInitializationEvent initializationEvent) {
+        TinkerRegistry.registerTool(battleShield);
         TinkerRegistry.registerToolForgeCrafting(battleShield);
 
         ToolBuildGuiInfo info = new ToolBuildGuiInfo(battleShield);
@@ -36,9 +37,7 @@ public class ModItems {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-
         battleShield = new BattleShield();
-        battleShield.setRegistryName(TinkerShield.MODID,"battleshield");
         event.getRegistry().register(battleShield);
         TinkerShield.proxy.registerToolModel(battleShield);
         MinecraftForge.EVENT_BUS.register(battleShield); // battleshield events

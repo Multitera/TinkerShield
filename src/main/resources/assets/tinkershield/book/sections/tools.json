@@ -1,0 +1,7 @@
+[
+  {
+    "name": "battleshield",
+    "type": "tool",
+    "data": "tools/battleshield.json"
+  }
+]

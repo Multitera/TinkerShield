@@ -35,6 +35,7 @@ public class TinkerShield {
         logger = event.getModLog();
         proxy.preInit(event);
         ModItems.preInit(event);
+        proxy.preRender();
     }
 
     @EventHandler

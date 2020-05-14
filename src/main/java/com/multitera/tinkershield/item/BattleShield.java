@@ -50,6 +50,8 @@ public class BattleShield extends SwordCore {
 
         addCategory(Category.WEAPON);
 
+        setUnlocalizedName("battleshield").setRegistryName("battleshield");
+
         this.addPropertyOverride(new ResourceLocation("blocking"), new IItemPropertyGetter() {
             @Override
             @SideOnly(Side.CLIENT)

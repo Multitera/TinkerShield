@@ -1,5 +1,6 @@
 package com.multitera.tinkershield.proxy;
 
+import com.multitera.tinkershield.book.BattleShieldBookTransformer;
 import com.multitera.tinkershield.init.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -7,7 +8,9 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import slimeknights.mantle.client.book.repository.FileRepository;
 import slimeknights.tconstruct.common.ModelRegisterUtil;
+import slimeknights.tconstruct.library.book.TinkerBook;
 import slimeknights.tconstruct.library.tools.ToolCore;
 
 
@@ -37,4 +40,10 @@ public class ClientProxy extends CommonProxy {
         ModelRegisterUtil.registerToolModel(tc);
     }
 
+    @SideOnly(Side.CLIENT)
+    @Override
+    public void preRender() {
+        TinkerBook.INSTANCE.addTransformer(new BattleShieldBookTransformer());
+        TinkerBook.INSTANCE.addRepository(new FileRepository("tinkershield:book"));
+    }
 }
